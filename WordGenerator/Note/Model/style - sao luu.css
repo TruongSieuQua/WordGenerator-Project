@@ -1,0 +1,185 @@
+html{
+    background-color: #000;
+    line-height: 1.7;
+    color: rgb(204, 204, 204);
+}
+
+.card-word{
+    word-spacing: 0.1rem;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.2rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.4rem grey; 
+    border-radius: 1rem;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 1rem;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+  }
+.word-cards{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.word-cards > div{
+    width: 20rem;
+}
+
+.word{
+    padding: 0 0.4rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #deb887;
+    background-color: #165366;
+    padding-top: 0;
+}
+
+.ipa{
+    padding: 0 1.2rem;
+    border-radius: 1.2rem;
+    color: #dedede;
+    display: table;
+    background-color: #8a2be2; 
+}
+
+.family{
+    padding:0 1.2rem;
+    border-radius: 1.2rem;
+    color: #f0f8ff;
+    display: table;
+    background-color: #535353;
+}
+
+.list-meanings{
+    height: 20rem;
+    overflow-y: auto;
+    overflow-x:hidden;
+    overflow-wrap: break-word;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-left: 2vw;
+    margin: 0.4rem 0.4rem 0.8rem;
+}
+
+.meaning:last-child{
+    margin-bottom: 1rem;
+}
+
+.meaning-en{
+    padding: 0 1rem 0 0.6rem;
+    border-radius: 8px;
+    margin-right: -0.8rem;
+    display: inline-block;
+    color: #b8860b;
+    background-color: darkgreen;
+}
+
+.meaning-vi{
+    display: inline-block;
+    padding: 0.2rem 0.4rem;
+    font-weight: 500;
+    background-color: #614800;
+    border-radius: 0.8rem;
+}
+
+.example{
+    font-family: ui-monospace;    
+    text-align: justify;
+    list-style-type: disclosure-closed;
+    margin-bottom: 0;
+    margin: 0 0.4rem 0 2rem;
+}
+
+.word-answer{
+    color: #99FF99;
+    background-color: rgb(51, 51, 102);
+    padding: 0.2rem 0.4rem;
+    font-weight: 560;
+}
+
+
+ul{
+    margin-left: 1.8rem;
+}
+
+li{ 
+    margin-top: 0;
+    font-family: ui-monospace;
+    list-style-type: none;
+}
+li:not(:last-child){
+    margin-bottom: 0.5rem;
+}
+
+.answer{
+    color: #99FF99;
+    font-weight: 560;
+}
+
+@media screen and (max-width: 82em) {
+    html {
+        font-size: 65%;
+    }
+    .word-cards > div{
+        width: 24%;
+    }
+  }
+
+@media screen and (max-width: 75em) {
+    html {
+        font-size: 65%;
+    }
+    .word-cards > div{
+        width: 24%;
+    }
+  }
+  
+
+  @media screen and (max-width: 56.25em) {
+    html {
+        font-size: 65%;
+    }
+    .word-cards > div{
+        width: 32%;
+    }
+    .example{
+        margin: 0 0.4rem 0 1.2rem;
+    }
+  }
+
+  @media screen and (max-width: 38rem) {
+    .word-cards > div{
+        width: 48%;
+    }
+    .list-meanings{
+        height: 20rem;
+    }
+  }
+
+  @media screen and (max-width: 26.25em) {
+    .word-cards > div{
+        width: 100%;
+    }
+
+    .list-meanings{
+        height: fit-content;
+        max-height: 20rem;
+    }
+ }
